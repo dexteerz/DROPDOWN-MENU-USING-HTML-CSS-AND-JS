@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dropdown Card Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="imgBx">
+                <img src="img/user.jpg" alt="user">
+            </div>
+            <h2>Breno Teixeira <br><span>Desenvolvedor web</span></h2>
+        </div>
+        <ul class="navigation">
+            <li>
+                <a href="#">
+                    <i class="ms-Icon ms-Icon--Contact"></i>Edit Profile</a>
+            </li>
+            <li>
+                <a href="#"><i class="ms-Icon ms-Icon--Mail"></i>Inbox</a>
+            </li>
+            <li>
+                <a href="#"><i class="ms-Icon ms-Icon--Settings"></i>Settings</a>
+            </li>
+            <li>
+                <a href="#"><i class="ms-Icon ms-Icon--Feedback"></i>Support</a>
+            </li>
+            <li>
+                <a href="#"><i class="ms-Icon ms-Icon--SignOut"></i>Logout</a>
+            </li>
+        </ul>
+        <div class="toggle">
+            <i class="ms-Icon ms-Icon--ChevronDown"></i>
+        </div>
+    </div>
+
+    <script>
+        const card = document.querySelector('.card');
+        const cardToggle = document.querySelector('.toggle');
+        cardToggle.onclick = function() {
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
